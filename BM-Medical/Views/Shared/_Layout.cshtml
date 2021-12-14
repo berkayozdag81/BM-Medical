@@ -37,7 +37,22 @@
                     </div>
                 </div>
                 <div class="ht-right">
-                    <a href="#" class="login-panel"><i class="fa-user"></i>Login</a>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a asp-area="Identity" asp-page="/Account/Login" class="login-panel"><i class="fa fa-user"></i>Login</a>
+                        <a asp-area="Identity" asp-page="/Account/Register" class="login-panel"><i class="fa fa-user"></i>Register</a>
+                    }
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/", new { area = "" })" method="post">
+                            <button type="submit" class="nav-link btn btn-link text-dark">
+                                <i class="fa fa-user"> Logout</i>
+                            </button>
+                        </form>
+                        
+                    }
+
+
                     <div class="lan-selector">
                         <select class="language_drop" name="countries" id="countries" style="width:300px;">
                             <option value='yt' data-image="/lib/bootstrap/dist/img/flag-1.jpg" data-imagecss="flag yt"
@@ -208,7 +223,7 @@
                     <div class="col-lg-12">
                         <div class="copyright-text">
                             Copyright &copy;
-                            <script>document.write(new Date().getFullYear());</script>  |  Created by Berkay & Metin 
+                            <script>document.write(new Date().getFullYear());</script>  |  Created by Berkay & Metin
                         </div>
                         <div class="payment-pic">
                             <img src="/lib/bootstrap/dist/img/payment-method.png" alt="">
@@ -219,7 +234,6 @@
         </div>
     </footer>
     <!-- Footer Section End -->
-
     <!-- Js Plugins -->
     <script src="/lib/bootstrap/dist/js/jquery-3.3.1.min.js"></script>
     <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
