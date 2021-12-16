@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
-<html lang="zxx">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Fashi Template">
     <meta name="keywords" content="Fashi, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fashi | Template</title>
+    <title>BM-Medical</title>
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- Css Styles -->
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/jquery-ui.min.css" type="text/css">
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/style.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0//lib/bootstrap/dist/css/font-awesome.min.css">
 </head>
 <body>
     <!-- Header Section Begin -->
@@ -28,11 +27,11 @@
             <div class="container">
                 <div class="ht-left">
                     <div class="mail-service">
-                        <i class="fa-mail-reply"></i>
+                        <i class="fa fa-envelope"></i>
                         hello.colorlib@gmail.com
                     </div>
                     <div class="phone-service">
-                        <i class="fa-phone"></i>
+                        <i class="fa fa-phone"></i>
                         +65 11.188.888
                     </div>
                 </div>
@@ -49,7 +48,7 @@
                                 <i class="fa fa-user"> Logout</i>
                             </button>
                         </form>
-                        
+
                     }
 
 
@@ -78,16 +77,15 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-7">
+                    <div class="col-lg-5 col-md-5">
                         <div class="advanced-search">
-                            <button type="button" class="category-btn">All Categories</button>
                             <div class="input-group">
                                 <input type="text" placeholder="What do you need?">
-                                <button type="button"><i class="ti-search"></i></button>
+                                <button type="button"><i class="fa fa-search"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 text-right col-md-3">
+                    <div class="col-lg-5 text-right col-md-5">
                         <ul class="nav-right">
                             <li class="heart-icon">
                                 <a href="#">
@@ -131,10 +129,6 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="select-total">
-                                        <span>total:</span>
-                                        <h5>$120.00</h5>
-                                    </div>
                                     <div class="select-button">
                                         <a asp-controller="Cart" asp-action="Index" class="primary-btn view-card">Sepete Git</a>
                                         <a asp-controller="CheckOut" asp-action="Index" class="primary-btn checkout-btn">Alışverişi Tamamla</a>
@@ -153,6 +147,10 @@
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                         <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li><a asp-controller="Admin" asp-action="Index">Admin Panel</a></li>
+                        }
                     </ul>
                 </nav>
                 <div id="mobile-menu-wrap"></div>
@@ -167,7 +165,7 @@
     <footer class="footer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-5">
                     <div class="footer-left">
                         <div class="footer-logo">
                             <a asp-controller="Home" asp-action="Index"><img src="/lib/bootstrap/dist/img/logo-carousel/yeniLogo.png" alt=""></a>
@@ -181,11 +179,10 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-2 offset-lg-1">
+                <div class="col-lg-3 offset-lg-1">
                     <div class="footer-widget">
                         <h5>Information</h5>
                         <ul>
@@ -194,7 +191,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <div class="footer-widget">
                         <h5>My Account</h5>
                         <ul>
@@ -203,16 +200,6 @@
                             <li><a asp-controller="Cart" asp-action="Index">Shopping Cart</a></li>
                             <li><a asp-controller="Shop" asp-action="Index">Shop</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="newslatter-item">
-                        <h5>Join Our Newsletter Now</h5>
-                        <p>Get E-mail updates about our latest shop and special offers.</p>
-                        <form action="#" class="subscribe-form">
-                            <input type="text" placeholder="Enter Your Mail">
-                            <button type="button">Subscribe</button>
-                        </form>
                     </div>
                 </div>
             </div>

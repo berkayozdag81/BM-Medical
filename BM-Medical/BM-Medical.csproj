@@ -18,6 +18,7 @@
   <ItemGroup>
     <Folder Include="Views\Shop\" />
     <Folder Include="wwwroot\lib\bootstrap\dist\" />
+    <Folder Include="wwwroot\lib\bootstrap\adminPanel\" />
   </ItemGroup>
 
 </Project>
