@@ -4,14 +4,16 @@ using BM_Medical.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace BM_Medical.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211218145855_BM_Tablolar2")]
+    partial class BM_Tablolar2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -135,17 +137,12 @@ namespace BM_Medical.Data.Migrations
                     b.Property<int?>("KategoriId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("OrderId")
-                        .HasColumnType("int");
-
                     b.Property<int?>("UrunId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("KategoriId");
-
-                    b.HasIndex("OrderId");
 
                     b.HasIndex("UrunId");
 
@@ -437,10 +434,6 @@ namespace BM_Medical.Data.Migrations
                         .WithMany()
                         .HasForeignKey("KategoriId");
 
-                    b.HasOne("BM_Medical.Models.Order", null)
-                        .WithMany("Urunler")
-                        .HasForeignKey("OrderId");
-
                     b.HasOne("BM_Medical.Models.Cart", null)
                         .WithMany("Urunler")
                         .HasForeignKey("UrunId");
@@ -500,11 +493,6 @@ namespace BM_Medical.Data.Migrations
                 });
 
             modelBuilder.Entity("BM_Medical.Models.Cart", b =>
-                {
-                    b.Navigation("Urunler");
-                });
-
-            modelBuilder.Entity("BM_Medical.Models.Order", b =>
                 {
                     b.Navigation("Urunler");
                 });

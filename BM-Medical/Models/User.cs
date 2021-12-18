@@ -11,16 +11,8 @@ namespace BM_Medical.Models
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        public DateTime? DogumTarihi { get; set; }
         public string Adres { get; set; }
+        public string Mail { get; set; }
         public string Sehir { get; set; }
-        [NotMapped]
-        public string AdSoyad
-        {
-            get
-            {
-                return Ad + " " + Soyad;
-            }
-        }
     }
 }

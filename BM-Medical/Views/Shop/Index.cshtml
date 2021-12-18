@@ -71,7 +71,10 @@
                                         <i class="icon_heart_alt"></i>
                                     </div>
                                     <ul>
-                                        <li class="quick-view"><a href="#">+ Sepete Ekle</a></li>
+                                        @if (User.IsInRole("Admin") || User.IsInRole("Customer"))
+                                        {
+                                            <li class="quick-view"><a href="#">+ Sepete Ekle</a></li>
+                                        }
                                     </ul>
                                 </div>
                                 <div class="pi-text">
