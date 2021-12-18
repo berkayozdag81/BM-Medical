@@ -130,8 +130,11 @@
                                         </table>
                                     </div>
                                     <div class="select-button">
-                                        <a asp-controller="Cart" asp-action="Index" class="primary-btn view-card">Sepete Git</a>
-                                        <a asp-controller="CheckOut" asp-action="Index" class="primary-btn checkout-btn">Alışverişi Tamamla</a>
+                                        @if (User.IsInRole("Admin") || User.IsInRole("Customer"))
+                                        {
+                                            <a asp-controller="Cart" asp-action="Index" class="primary-btn view-card">Sepete Git</a>
+                                            <a asp-controller="CheckOut" asp-action="Index" class="primary-btn checkout-btn">Alışverişi Tamamla</a>
+                                        }
                                     </div>
                                 </div>
                             </li>

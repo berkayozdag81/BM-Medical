@@ -8,7 +8,7 @@ namespace BM_Medical.Models
     public class ProductDetail
     {
         public int Id { get; set; }
-        public string Baslik { get; set; }
+        public string ÜrünAdi { get; set; }
         public double Fiyat { get; set; }
         public string Aciklama { get; set; }
         public int Stok { get; set; }

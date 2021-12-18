@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.5/css/responsive.bootstrap4.min.css">
     <script src="~/lib/bootstrap/adminPanel/chart-js-config.js"></script>
-    <title>Anti Corona Admin Sayfası</title>
+    <title>BM-Medical Admin Sayfası</title>
 </head>
 <body>
     <div class="dash">
@@ -20,34 +20,24 @@
                 <a href="#!" class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </a>
-                <a href="/" class="easion-logo"><span>Anti-Corona</span></a>
+                <a href="/" class="easion-logo"><span>BM-Medical</span></a>
             </header>
             <nav class="dash-nav-list">
-                <a href="/admin" class="dash-nav-item">
+                <a asp-controller="Admin" asp-action="Index" class="dash-nav-item">
                     <i class="fas fa-home"></i>Dashboard
                 </a>
                 <div class="dash-nav-list">
-                    <a href="/admin/UserList" class="dash-nav-item">
+                    <a asp-controller="Admin" asp-action="UserList" class="dash-nav-item">
                         <i class="fa fa-users"></i> Kullanıcılar
                     </a>
                 </div>
                 <div class="dash-nav-list">
-                    <a href="/admin/RoleList" class="dash-nav-item">
-                        <i class="fas fa-user"></i> Roller
-                    </a>
-                </div>
-                <div class="dash-nav-list">
-                    <a href="/admin/ProductList" class="dash-nav-item">
+                    <a asp-controller="Admin" asp-action="ProductList" class="dash-nav-item">
                         <i class="fa fa-shopping-basket"></i>Ürünler
                     </a>
                 </div>
                 <div class="dash-nav-list">
-                    <a href="/admin/BrandList" class="dash-nav-item">
-                        <i class="fa fa-shopping-basket"></i>Markalar
-                    </a>
-                </div>
-                <div class="dash-nav-list">
-                    <a href="/admin/CategoryList" class="dash-nav-item">
+                    <a asp-controller="Admin" asp-action="CategoryList" class="dash-nav-item">
                         <i class="fa fa-shopping-basket"></i>Kategoriler
                     </a>
                 </div>

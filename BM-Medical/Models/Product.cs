@@ -16,7 +16,7 @@ namespace BM_Medical.Models
         public string Ad { get; set; }
         [Range(1, int.MaxValue)]
         public double Fiyat { get; set; }
-        public int Adet { get; set; }
+        public int Stok { get; set; }
         public string Aciklama { get; set; }
         public int? CategoryId { get; set; }
         [ForeignKey("KategoriId")]

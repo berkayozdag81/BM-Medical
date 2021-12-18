@@ -12,5 +12,17 @@ namespace BM_Medical.Controllers
         {
             return View();
         }
+        public IActionResult CategoryList()
+        {
+            return View();
+        }
+        public IActionResult ProductList()
+        {
+            return View();
+        }
+        public IActionResult UserList()
+        {
+            return View();
+        }
     }
 }
