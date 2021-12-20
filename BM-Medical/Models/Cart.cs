@@ -10,18 +10,9 @@ namespace BM_Medical.Models
     {
         public int Id { get; set; }
         public User User { get; set; }
-        public int? UrunId { get; set; }
-        [ForeignKey("UrunId")]
-        public List<Product> Urunler { get; set; }
+        public Product Product { get; set; }
+        public CartStatu CartStatu { get; set; }
         public double Miktar { get; set; }
-        public double Fiyat { get; set; }
-        [NotMapped] // NotMapped dendiği için db de oluşturulmayacak.
-        public double ToplamFiyat
-        {
-            get
-            {
-                return Miktar * Fiyat;
-            }
-        }
+        public double LastFiyat { get; set; } // Ürünün fiiyatında indirim yapıldıktan sonraki soın hali.
     }
 }

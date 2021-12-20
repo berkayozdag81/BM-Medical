@@ -11,7 +11,7 @@ namespace BM_Medical.Models
         public int Id { get; set; }
         public User User { get; set; }
         public double ToplamUcret { get; set; }
-        public List<Product> Urunler { get; set; }
+        public Cart Cart { get; set; }
         public DateTime SiparisTarihi { get; set; }
     }
 }

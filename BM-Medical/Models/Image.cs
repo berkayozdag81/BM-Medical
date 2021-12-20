@@ -10,8 +10,5 @@ namespace BM_Medical.Models
     {
         public int Id { get; set; }
         public string FotoAd { get; set; }
-        public int? UrunId { get; set; }
-        [ForeignKey("UrunId")]
-        public Product Product { get; set; }
     }
 }
