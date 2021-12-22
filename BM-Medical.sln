@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BM-Medical", "BM-Medical\BM-Medical.csproj", "{3F4E0657-82F4-4FAB-A576-9D378649FA2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM-Medical", "BM-Medical\BM-Medical.csproj", "{3F4E0657-82F4-4FAB-A576-9D378649FA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BM-Medical_WebApi", "BM-Medical_WebApi\BM-Medical_WebApi.csproj", "{65DF4B89-9754-4D52-AA70-F29C76628542}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DF4B89-9754-4D52-AA70-F29C76628542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DF4B89-9754-4D52-AA70-F29C76628542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DF4B89-9754-4D52-AA70-F29C76628542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DF4B89-9754-4D52-AA70-F29C76628542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
