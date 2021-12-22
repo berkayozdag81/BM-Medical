@@ -98,4 +98,337 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	  <data name="Add" xml:space="preserve">
+    <value>Ekle</value>
+  </data>
+  <data name="AddCart" xml:space="preserve">
+    <value>Sepete Ekle</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Kategori Ekle</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Ürün Ekle</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Kullanıcı Ekle</value>
+  </data>
+  <data name="AdminPage" xml:space="preserve">
+    <value>BM-Medical Admin Sayfası</value>
+  </data>
+  <data name="AdminPanel" xml:space="preserve">
+    <value>Admin Paneli</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Siyah</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Mavi</value>
+  </data>
+  <data name="BM_Medical" xml:space="preserve">
+    <value>BM-Medical</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Sepet</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Kategoriler</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Kategori</value>
+  </data>
+  <data name="CategoryId" xml:space="preserve">
+    <value>Kategori Id</value>
+  </data>
+  <data name="CategoryInformation" xml:space="preserve">
+    <value>Kategori Bilgileri</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Kategori Adı</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>Şehir</value>
+  </data>
+  <data name="Colors" xml:space="preserve">
+    <value>Renkler</value>
+  </data>
+  <data name="Combination" xml:space="preserve">
+    <value>Combination x 1</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Siparişi Ver</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Bizimle İletişime Geçin</value>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Alışverişe Devam Et</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>|  Created by Berkay &amp; Metin</value>
+  </data>
+  <data name="Coronavirus" xml:space="preserve">
+    <value>Koronavirüs</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Gösterge Paneli</value>
+  </data>
+  <data name="Development_Mode" xml:space="preserve">
+    <value>Gelişim Modu</value>
+  </data>
+  <data name="Disinfectant" xml:space="preserve">
+    <value>Dezenfektan</value>
+  </data>
+  <data name="Disinfectants" xml:space="preserve">
+    <value>Dezenfektanlar</value>
+  </data>
+  <data name="EditRemove" xml:space="preserve">
+    <value>Düzenle/Sil</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>İngilizce</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="Error_Detail" xml:space="preserve">
+    <value>İşleminiz gerçekleştirilirken bir hata oluştu.</value>
+  </data>
+  <data name="ExampleMail" xml:space="preserve">
+    <value>hellocolorlib@gmail.com</value>
+  </data>
+  <data name="ExampleMail_2" xml:space="preserve">
+    <value>bm_medical@gmail.com</value>
+  </data>
+  <data name="ExamplePhoneNumber" xml:space="preserve">
+    <value>0532 777 11 22</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Çıkış Yap</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="FinishShopping" xml:space="preserve">
+    <value>Alışverişi Tamamla</value>
+  </data>
+  <data name="Glove" xml:space="preserve">
+    <value>Eldiven</value>
+  </data>
+  <data name="Gloves" xml:space="preserve">
+    <value>Eldivenler</value>
+  </data>
+  <data name="GoToCart" xml:space="preserve">
+    <value>Sepete Git</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Yeşil</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Merhaba</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="InvoiceDetail" xml:space="preserve">
+    <value>Fatura Detayı</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Giriş Yap</value>
+  </data>
+  <data name="LoremIpsum" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Masks" xml:space="preserve">
+    <value>Maskeler</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>Daha Fazla</value>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>Detaylı bilgi için tıklayın</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>Benim Hesabım</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Adet</value>
+  </data>
+  <data name="NumberOfProducts" xml:space="preserve">
+    <value>Sitedeki Ürün Sayısı</value>
+  </data>
+  <data name="NumberOfUsers" xml:space="preserve">
+    <value>Siteye Kayıtlı Kullanıcı Sayısı</value>
+  </data>
+  <data name="One" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Paragraph_1" xml:space="preserve">
+    <value>Dünya Sağlık Örgütü verilerine göre Covid-19 için 12 Kasım 2020 tarihi itibarıyla aralarında Türkiye'nin de olduğu onlarca ülkede toplam 212 aşı çalışması devam ediyor.</value>
+  </data>
+  <data name="Paragraph_2" xml:space="preserve">
+    <value>Ülkemizde süreç içerisinde birden fazla COVID-19 aşısı türü uygulanabilecek olmakla birlikte şu anda inaktif COVID-19 aşısı (Sinovac) ve mRNA COVID-19 aşısı (Biontech) uygulanmaktadır.</value>
+  </data>
+  <data name="Paragraph_3" xml:space="preserve">
+    <value>Yeni koronavirüs enfeksiyonu belirtileri arasında ateş, öksürük, nefes darlığı ve solunum güçlüğü bulunur.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Telefon Numarası</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Resim</value>
+  </data>
+  <data name="Pineapple" xml:space="preserve">
+    <value>Saf Ananas</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>60 ₺</value>
+  </data>
+  <data name="Price_2" xml:space="preserve">
+    <value>$60.00 x 1</value>
+  </data>
+  <data name="Price_3" xml:space="preserve">
+    <value>$64.00</value>
+  </data>
+  <data name="Price_4" xml:space="preserve">
+    <value>$35.00</value>
+  </data>
+  <data name="Price_5" xml:space="preserve">
+    <value>$44.00</value>
+  </data>
+  <data name="Price_6" xml:space="preserve">
+    <value>$34.00</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Kabino Bedside Table</value>
+  </data>
+  <data name="ProductDetail" xml:space="preserve">
+    <value>Ürün Detayı</value>
+  </data>
+  <data name="ProductExplanation" xml:space="preserve">
+    <value>Ürün Açıklaması</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Ürün Id</value>
+  </data>
+  <data name="ProductInformation" xml:space="preserve">
+    <value>Ürün Bilgileri</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Ürün Adı</value>
+  </data>
+  <data name="ProductPrice" xml:space="preserve">
+    <value>Fiyat (₺)</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Ürünler</value>
+  </data>
+  <data name="ProductStock" xml:space="preserve">
+    <value>Stok</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Kırmızı</value>
+  </data>
+  <data name="Request_Id" xml:space="preserve">
+    <value>Request ID:</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rolü</value>
+  </data>
+  <data name="Sakarya" xml:space="preserve">
+    <value>Sakarya Esentepe Kampüsü</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Kategori Seçiniz</value>
+  </data>
+  <data name="Shoes" xml:space="preserve">
+    <value>Converse Ayakkabılar</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>Mağaza</value>
+  </data>
+  <data name="Shopping" xml:space="preserve">
+    <value>Alışveriş</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Kayıt Ol</value>
+  </data>
+  <data name="SoldProduct" xml:space="preserve">
+    <value>Son Satılan Ürünler</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Soyad</value>
+  </data>
+  <data name="Syndrome" xml:space="preserve">
+    <value>Hastalık Belirtileri</value>
+  </data>
+  <data name="Three" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Toplam</value>
+  </data>
+  <data name="TotalIncome" xml:space="preserve">
+    <value>Toplam Gelir</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Toplam Fiyat</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Türkçe</value>
+  </data>
+  <data name="UserAdress" xml:space="preserve">
+    <value>Kullanıcı Adresi</value>
+  </data>
+  <data name="UserCity" xml:space="preserve">
+    <value>Kullanıcının Yaşadığı Şehir</value>
+  </data>
+  <data name="UserInformation" xml:space="preserve">
+    <value>Kullanıcı Bilgileri</value>
+  </data>
+  <data name="UserMail" xml:space="preserve">
+    <value>Kullanıcı Mail Adresi</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Kullanıcı Adı</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Kullanıcılar</value>
+  </data>
+  <data name="UserSurname" xml:space="preserve">
+    <value>Kullanıcı Soyadı</value>
+  </data>
+  <data name="VacationNews" xml:space="preserve">
+    <value>Aşılanma ile ilgili haberler</value>
+  </data>
+  <data name="VirusStudies" xml:space="preserve">
+    <value>Virüs Çalışmaları</value>
+  </data>
+  <data name="Visors" xml:space="preserve">
+    <value>Siperlikler</value>
+  </data>
+  <data name="Windbreaker" xml:space="preserve">
+    <value>2 Katlı Rüzgarlık</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Sarı</value>
+  </data>
+  <data name="YourOrders" xml:space="preserve">
+    <value>Siparişlerin</value>
+  </data>
 </root>
