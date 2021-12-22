@@ -14,6 +14,26 @@
             <h4>Yeni kullanıcı oluştur</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
+            @*<div class="form-group">
+                <label asp-for="Input.UserName"></label>
+                <input asp-for="Input.UserName" class="form-control" />
+                <span asp-validation-for="Input.UserName" class="text-danger"></span>
+            </div>*@
+            <div class="form-group">
+                <label asp-for="Input.UserSurname"></label>
+                <input asp-for="Input.UserSurname" class="form-control" />
+                <span asp-validation-for="Input.UserSurname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Sehir"></label>
+                <input asp-for="Input.Sehir" class="form-control" />
+                <span asp-validation-for="Input.Sehir" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Adres"></label>
+                <input asp-for="Input.Adres" class="form-control" />
+                <span asp-validation-for="Input.Adres" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Input.Email"></label>
                 <input asp-for="Input.Email" class="form-control" />

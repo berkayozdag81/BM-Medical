@@ -46,6 +46,22 @@ namespace BM_Medical.Areas.Identity.Pages.Account
 
         public class InputModel
         {
+            //[Required]
+            //[Display(Name = "Ad")]
+            //public string UserName { get; set; }
+
+            [Required]
+            [Display(Name = "Soyad")]
+            public string UserSurname { get; set; }
+
+            [Required]
+            [Display(Name = "Şehir")]
+            public string Sehir { get; set; }
+
+            [Required]
+            [Display(Name = "Adres")]
+            public string Adres { get; set; }
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -77,9 +93,12 @@ namespace BM_Medical.Areas.Identity.Pages.Account
             {
                 var user = new User
                 {
-                    UserName = Input.Email,
+                    
+                    //Ad = Input.UserName,
+                    Soyad = Input.UserSurname,
+                    Sehir = Input.Sehir,
+                    Adres = Input.Adres,
                     Email = Input.Email,
-
                 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)

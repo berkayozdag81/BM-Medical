@@ -93,11 +93,11 @@ namespace BM_Medical.Controllers
         {
             var entity = new User()
             {
-                Ad = user.Ad,
+                UserName = user.UserName,
                 Soyad = user.Soyad,
                 Adres = user.Adres,
                 Sehir = user.Sehir,
-                Mail = user.Mail,
+                Email = user.Email,
             };
             this.Context.Users.Add(entity);
             this.Context.SaveChanges();

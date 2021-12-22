@@ -37,7 +37,7 @@
                             <tr>
                                 <th scope="col">Kategori Id</th>
                                 <th scope="col">Kategori Adı</th>
-                                <th scope="col">Düzenle/Sil</th>
+                                <th scope="col">Sil</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,7 +47,6 @@
                                     <td scope="row">@item.Id</td>
                                     <td>@item.Ad</td>
                                     <td>
-                                        <a href="/Admin/CategoryList/@item.Id" class="btn btn-primary btn-sm mr-2"><i class="fas fa-edit"></i></a>
                                         <form asp-controller="Admin" asp-action="CategoryDelete" method="post" style="display:inline">
                                             <input type="hidden" name="Id" value="@item.Id" />
                                             <button type="submit" class="btn btn-danger btn-sm "><i class="fas fa-trash-alt"></i></button>

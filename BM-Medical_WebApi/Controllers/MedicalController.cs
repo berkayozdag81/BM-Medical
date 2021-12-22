@@ -1,10 +1,8 @@
-using System.Web.Http;
-
-
+﻿using System.Web.Http;
 
 namespace BM_Medical_WebApi.Controllers
 {
-    public class MedicalController : ApiController
+    public class MedicalController:ApiController
     {
         [HttpPost]
         [Route("api/BM/GetTest")]
@@ -12,12 +10,8 @@ namespace BM_Medical_WebApi.Controllers
         {
             var response = "WebApi is Working...";
 
-
-
             return Json(response);
         }
-
-
 
         [HttpGet]
         [Route("api/BM/GetProduct/")]
@@ -26,11 +20,8 @@ namespace BM_Medical_WebApi.Controllers
             return Json(new { Message = "Service Working.success" });
         }
 
-
-
     }
 
 
-
-
 }
+
