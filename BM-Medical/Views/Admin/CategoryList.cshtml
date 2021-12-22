@@ -20,7 +20,7 @@
                                 <input class="form-control" name="Ad" />
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Ekle</button>
+                        <button type="submit"  class="btn btn-primary">Ekle</button>
                     </form>
                 </div>
             </div>
@@ -40,22 +40,22 @@
                                 <th scope="col">Düzenle/Sil</th>
                             </tr>
                         </thead>
-                        @*<tbody>
+                        <tbody>
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td scope="row">@item.CategoryId</td>
-                                    <td>@item.Name</td>
+                                    <td scope="row">@item.Id</td>
+                                    <td>@item.Ad</td>
                                     <td>
-                                        <a href="/Admin/CategoryEdit/@item.CategoryId" class="btn btn-primary btn-sm mr-2"><i class="fas fa-edit"></i></a>
-                                        <form action="/admin/CategoryDelete" method="post" style="display:inline">
-                                            <input type="hidden" name="CategoryId" value="@item.CategoryId" />
+                                        <a href="/Admin/CategoryList/@item.Id" class="btn btn-primary btn-sm mr-2"><i class="fas fa-edit"></i></a>
+                                        <form asp-controller="Admin" asp-action="CategoryDelete" method="post" style="display:inline">
+                                            <input type="hidden" name="Id" value="@item.Id" />
                                             <button type="submit" class="btn btn-danger btn-sm "><i class="fas fa-trash-alt"></i></button>
                                         </form>
                                     </td>
                                 </tr>
                             }
-                        </tbody>*@
+                        </tbody>
                     </table>
                 </div>
             </div>

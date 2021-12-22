@@ -12,13 +12,9 @@ namespace BM_Medical.Models
         public int Id { get; set; }
         [Required]
         [Display(Name = "Ürün Adı")]
-        
         public string Ad { get; set; }
-
         public Category Category { get; set; }
-
-        public Image Image { get; set; }
-
+        public byte[] Image { get; set; }
         [Range(1, int.MaxValue)]
         public double Fiyat { get; set; }
         public int Stok { get; set; }

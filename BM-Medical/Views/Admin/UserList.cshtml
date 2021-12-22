@@ -1,4 +1,6 @@
-﻿@{ Layout = "_LayoutAdmin"; }
+﻿@model IEnumerable<BM_Medical.Models.User>
+
+@{ Layout = "_LayoutAdmin"; }
 
 <div class="container-fluid">
     <h1 class="dash-title">Kullanıcılar</h1>
@@ -11,7 +13,7 @@
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                    <form asp-controller="Admin" asp-action="CategoryCreate" method="post">
+                    <form asp-controller="Admin" asp-action="UserCreate" method="post">
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="form-group row">
                             <div class="col-sm-12 pb-3">
@@ -59,12 +61,34 @@
                             <tr>
                                 <th scope="col">Adı</th>
                                 <th scope="col">Soyadı</th>
-                                <th scope="col">Email</th>
+                                <th scope="col">Adres</th>
                                 <th scope="col">Telefon Numarası</th>
-                                <th scope="col">Rolü</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Sehir</th>
                                 <th scope="col">Düzenle/Sil</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td scope="row">@item.Ad</td>
+                                    <td>@item.Soyad</td>
+                                    <td>@item.Adres</td>
+                                    <td>@item.PhoneNumber</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Sehir</td>
+                                    <td></td>
+                                    <td>
+                                        <a href="/Admin/UserList/@item.Id" class="btn btn-primary btn-sm mr-2"><i class="fas fa-user-edit"></i></a>
+                                        <form asp-controller="Admin" asp-action="UserDelete" method="post" style="display:inline">
+                                            <input type="hidden" name="UserId" value="@item.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm "><i class="fas fa-user-minus"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
                     </table>
                 </div>
             </div>

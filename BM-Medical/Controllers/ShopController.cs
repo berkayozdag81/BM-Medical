@@ -6,20 +6,21 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using BM_Medical.Models;
+using BM_Medical.Data;
 
 namespace BM_Medical.Controllers
 {
     public class ShopController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public ShopController(ILogger<HomeController> logger)
+        private ApplicationDbContext Context { get; }
+        public ShopController(ApplicationDbContext _context)
         {
-            _logger = logger;
+            this.Context = _context;
         }
         public IActionResult Index()
         {
-            return View();
+            var objList = (this.Context.Categories).ToList();
+            return View(objList);
         }
 
     }
