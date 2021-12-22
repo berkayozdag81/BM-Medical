@@ -98,4 +98,338 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddCart" xml:space="preserve">
+    <value>Add to cart</value>
+  </data>
+  <data name="AddCategory" xml:space="preserve">
+    <value>Add Category</value>
+  </data>
+  <data name="AddProduct" xml:space="preserve">
+    <value>Add Product</value>
+  </data>
+  <data name="AddUser" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="AdminPage" xml:space="preserve">
+    <value>BM-Medical Admin Page</value>
+  </data>
+  <data name="AdminPanel" xml:space="preserve">
+    <value>Admin Panel</value>
+  </data>
+  <data name="Adress" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="BM_Medical" xml:space="preserve">
+    <value>BM-Medical</value>
+  </data>
+  <data name="Cart" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CategoryId" xml:space="preserve">
+    <value>Category Id</value>
+  </data>
+  <data name="CategoryInformation" xml:space="preserve">
+    <value>Category Information</value>
+  </data>
+  <data name="CategoryName" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Colors" xml:space="preserve">
+    <value>Colors</value>
+  </data>
+  <data name="Combination" xml:space="preserve">
+    <value>Combination x 1</value>
+  </data>
+  <data name="CompleteOrder" xml:space="preserve">
+    <value>Complete Order</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="ContinueShopping" xml:space="preserve">
+    <value>Continue to Shopping</value>
+  </data>
+  <data name="CopyRight" xml:space="preserve">
+    <value>|  Created by Berkay &amp; Metin</value>
+  </data>
+  <data name="Coronavirus" xml:space="preserve">
+    <value>Coronavirus</value>
+  </data>
+  <data name="Dashboard" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Development_Mode" xml:space="preserve">
+    <value>Development Mode</value>
+  </data>
+  <data name="Disinfectant" xml:space="preserve">
+    <value>Disinfectant</value>
+  </data>
+  <data name="Disinfectants" xml:space="preserve">
+    <value>Disinfectants</value>
+  </data>
+  <data name="EditRemove" xml:space="preserve">
+    <value>Edit/Remove</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Error_Detail" xml:space="preserve">
+    <value>An error occurred while processing your request.</value>
+  </data>
+  <data name="ExampleMail" xml:space="preserve">
+    <value>hellocolorlib@gmail.com</value>
+  </data>
+  <data name="ExampleMail_2" xml:space="preserve">
+    <value>bm_medical@gmail.com</value>
+  </data>
+  <data name="ExamplePhoneNumber" xml:space="preserve">
+    <value>0532 777 11 22</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtre</value>
+  </data>
+  <data name="FinishShopping" xml:space="preserve">
+    <value>Finishing to Shopping</value>
+  </data>
+  <data name="Glove" xml:space="preserve">
+    <value>Glove</value>
+  </data>
+  <data name="Gloves" xml:space="preserve">
+    <value>Gloves</value>
+  </data>
+  <data name="GoToCart" xml:space="preserve">
+    <value>Go to cart</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Yeşil</value>
+  </data>
+  <data name="Hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="HomePage" xml:space="preserve">
+    <value>Home Page</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="InvoiceDetail" xml:space="preserve">
+    <value>Detail of Invoice</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="LoremIpsum" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</value>
+  </data>
+  <data name="Mail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="Masks" xml:space="preserve">
+    <value>Masks</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="MoreInformation" xml:space="preserve">
+    <value>Click for detailed information</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="NumberOfProducts" xml:space="preserve">
+    <value>Number of Products on the Site</value>
+  </data>
+  <data name="NumberOfUsers" xml:space="preserve">
+    <value>Number of Users Registered on the Site</value>
+  </data>
+  <data name="One" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Paragraph_1" xml:space="preserve">
+    <value>According to the data of the World Health Organization, as of November 12, 2020, a total of 212 vaccine studies for Covid-19 continue in dozens of countries, including Turkey.</value>
+  </data>
+  <data name="Paragraph_2" xml:space="preserve">
+    <value>Although more than one type of COVID-19 vaccine can be administered in our country during the process, inactive COVID-19 vaccine (Sinovac) and mRNA COVID-19 vaccine (Biontech) are currently being administered.</value>
+  </data>
+  <data name="Paragraph_3" xml:space="preserve">
+    <value>Symptoms of the new coronavirus infection include fever, cough, shortness of breath and difficulty breathing.</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Picture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="Pineapple" xml:space="preserve">
+    <value>Pure Pineapple</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>60 ₺</value>
+  </data>
+  <data name="Price_2" xml:space="preserve">
+    <value>$60.00 x 1</value>
+  </data>
+  <data name="Price_3" xml:space="preserve">
+    <value>$64.00</value>
+  </data>
+  <data name="Price_4" xml:space="preserve">
+    <value>$35.00</value>
+  </data>
+  <data name="Price_5" xml:space="preserve">
+    <value>$44.00</value>
+  </data>
+  <data name="Price_6" xml:space="preserve">
+    <value>$34.00</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Kabino Bedside Table</value>
+  </data>
+  <data name="ProductDetail" xml:space="preserve">
+    <value>Product Detail</value>
+  </data>
+  <data name="ProductExplanation" xml:space="preserve">
+    <value>Product Explanation</value>
+  </data>
+  <data name="ProductId" xml:space="preserve">
+    <value>Product Id</value>
+  </data>
+  <data name="ProductInformation" xml:space="preserve">
+    <value>Product Information</value>
+  </data>
+  <data name="ProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="ProductPrice" xml:space="preserve">
+    <value>Price (₺)</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="ProductStock" xml:space="preserve">
+    <value>Stock</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Request_Id" xml:space="preserve">
+    <value>Request ID:</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Sakarya" xml:space="preserve">
+    <value>Sakarya University Esentepe Campus</value>
+  </data>
+  <data name="SelectCategory" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="Shoes" xml:space="preserve">
+    <value>Converse Shoes</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>Shop</value>
+  </data>
+  <data name="Shopping" xml:space="preserve">
+    <value>Shopping</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="SoldProduct" xml:space="preserve">
+    <value>Recently Sold Items</value>
+  </data>
+  <data name="Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Syndrome" xml:space="preserve">
+    <value>Syndrome</value>
+  </data>
+  <data name="Three" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="TotalIncome" xml:space="preserve">
+    <value>Total Income</value>
+  </data>
+  <data name="TotalPrice" xml:space="preserve">
+    <value>Total Price</value>
+  </data>
+  <data name="Turkish" xml:space="preserve">
+    <value>Turkish</value>
+  </data>
+  <data name="UserAdress" xml:space="preserve">
+    <value>User Adress</value>
+  </data>
+  <data name="UserCity" xml:space="preserve">
+    <value>City ​​where the user lives</value>
+  </data>
+  <data name="UserInformation" xml:space="preserve">
+    <value>User Information</value>
+  </data>
+  <data name="UserMail" xml:space="preserve">
+    <value>User Mail</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
+  </data>
+  <data name="UserSurname" xml:space="preserve">
+    <value>User Surname</value>
+  </data>
+  <data name="VacationNews" xml:space="preserve">
+    <value>News about vaccination</value>
+  </data>
+  <data name="VirusStudies" xml:space="preserve">
+    <value>Virus Studies</value>
+  </data>
+  <data name="Visors" xml:space="preserve">
+    <value>Visors</value>
+  </data>
+  <data name="Windbreaker" xml:space="preserve">
+    <value>2 Layer Windbreaker</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="YourOrders" xml:space="preserve">
+    <value>Your Orders</value>
+  </data>
 </root>
