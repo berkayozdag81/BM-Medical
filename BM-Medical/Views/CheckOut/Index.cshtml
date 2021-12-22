@@ -11,43 +11,43 @@
                     <h4>Fatura Detayı</h4>
                     <div class="row">
                         <div class="col-lg-6">
-                            <label for="fir">Ad<span>*</span></label>
+                            <label for="fir">@Labels.Name<span>*</span></label>
                             <input type="text" id="fir">
                         </div>
                         <div class="col-lg-6">
-                            <label for="last">Soyad<span>*</span></label>
+                            <label for="last">@Labels.Surname<span>*</span></label>
                             <input type="text" id="last">
                         </div>
                         <div class="col-lg-12">
-                            <label for="street">Adres<span>*</span></label>
+                            <label for="street">@Labels.Adress<span>*</span></label>
                             <input type="text" id="street" class="street-first">
                         </div>
                         <div class="col-lg-12">
-                            <label for="town">Şehir<span>*</span></label>
+                            <label for="town">@Labels.City<span>*</span></label>
                             <input type="text" id="town">
                         </div>
                         <div class="col-lg-6">
-                            <label for="email">Email<span>*</span></label>
+                            <label for="email">@Labels.Mail<span>*</span></label>
                             <input type="text" id="email">
                         </div>
                         <div class="col-lg-6">
-                            <label for="phone">Telefon<span>*</span></label>
+                            <label for="phone">@Labels.PhoneNumber<span>*</span></label>
                             <input type="text" id="phone">
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="place-order">
-                        <h4>Siparişlerin</h4>
+                        <h4>@Labels.YourOrders</h4>
                         <div class="order-total">
                             <ul class="order-table">
-                                <li>Product <span>Sepet Toplamı</span></li>
-                                <li class="fw-normal">Combination x 1 <span>60 ₺</span></li>
-                                <li class="fw-normal">Combination x 1 <span>60 ₺</span></li>
-                                <li class="total-price">Sepet Toplamı <span>60 ₺</span></li>
+                                <li>Product <span>@Labels.TotalPrice</span></li>
+                                <li class="fw-normal">@Labels.Combination<span>@Labels.Price</span></li>
+                                <li class="fw-normal">@Labels.Combination <span>@Labels.Price</span></li>
+                                <li class="total-price">@Labels.TotalPrice <span>@Labels.Price</span></li>
                             </ul>
                             <div class="order-btn">
-                                <button type="submit" class="site-btn place-btn">Siparişi ver</button>
+                                <button type="submit" class="site-btn place-btn">@Labels.CompleteOrder</button>
                             </div>
                         </div>
                     </div>
