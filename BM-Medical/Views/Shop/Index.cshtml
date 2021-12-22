@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
                 <div class="filter-widget">
-                    <h4 class="fw-title">Kategoriler</h4>
+                    <h4 class="fw-title">@Labels.Categories</h4>
                     <ul class="filter-catagories">
                         @foreach (var item in Model)
                         {
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 <div class="filter-widget">
-                    <h4 class="fw-title">Fiyat</h4>
+                    <h4 class="fw-title">@Labels.ProductPrice</h4>
                     <div class="filter-range-wrap">
 
                         <div class="row">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="filter-btn">Ara</a>
+                    <a href="#" class="filter-btn">@Labels.Filter</a>
                 </div>
             </div>
             <div class="col-lg-9 order-1 order-lg-2">
@@ -49,17 +49,17 @@
                                     <ul>
                                         @if (User.IsInRole("Admin") || User.IsInRole("Customer"))
                                         {
-                                            <li class="quick-view"><a href="#">+ Sepete Ekle</a></li>
+                                           <li class="quick-view"><a href="#">+ @Labels.AddCart</a></li>
                                         }
                                     </ul>
                                 </div>
                                 <div class="pi-text">
                                     <a href="#">
-                                        <h5>Pure Pineapple</h5>
+                                        <h5>@Labels.Shoes</h5>
                                     </a>
                                     <div class="product-price">
-                                        $64.00
-                                        <span>$35.00</span>
+                                        @Labels.Price_6
+                                        <span>@Labels.Price_4</span>
                                     </div>
                                 </div>
                             </div>
@@ -69,7 +69,7 @@
                 <div class="loading-more">
                     <i class="icon_loading"></i>
                     <a href="#">
-                        Daha Fazla
+                     @Labels.More
                     </a>
                 </div>
             </div>
