@@ -1,41 +1,31 @@
-﻿@{ Layout = "_LayoutAdmin"; }
+﻿@model IEnumerable<BM_Medical.Models.User>
+@{ Layout = "_LayoutAdmin"; }
+@using BM_Medical_Resource
+
 <div class="container-fluid">
     <div class="row dash-row">
         <div class="col-xl-4">
             <div class="stats stats-primary">
-                    <h3 class="stats-title">@Labels.NumberOfUsers</h3>
+                <h3 class="stats-title">@Labels.NumberOfUsers</h3>
                 <div class="stats-content">
                     <div class="stats-icon">
                         <i class="fa fa-users"></i>
                     </div>
                     <div class="stats-data">
-                        <div class="stats-number"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-4">
-            <div class="stats stats-success ">
-              <h3 class="stats-title">@Labels.TotalIncome</h3>
-                <div class="stats-content">
-                    <div class="stats-icon">
-                        <i class="fas fa-cart-arrow-down"></i>
-                    </div>
-                    <div class="stats-data">
-                        <div class="stats-number"></div>
+                        <div class="stats-number">@ViewBag.UserCount</div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-xl-4">
             <div class="stats stats-danger">
-              <h3 class="stats-title">@Labels.NumberOfProducts</h3>
+                <h3 class="stats-title">@Labels.NumberOfProducts</h3>
                 <div class="stats-content">
                     <div class="stats-icon">
                         <i class="fa fa-shopping-basket"></i>
                     </div>
                     <div class="stats-data">
-                        <div class="stats-number"></div>
+                        <div class="stats-number">@ViewBag.ProductCount</div>
                     </div>
                 </div>
             </div>

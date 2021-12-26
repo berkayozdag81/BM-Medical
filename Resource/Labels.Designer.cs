@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Resource {
+namespace BM_Medical_Resource {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace Resource {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Labels {
+    public class Labels {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace Resource {
         ///   Bu sınıf tarafından kullanılan, önbelleğe alınmış ResourceManager örneğini döndürür.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resource.Labels", typeof(Labels).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("BM_Medical_Resource.Labels", typeof(Labels).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace Resource {
         ///   CurrentUICulture özelliğini tüm kaynak aramaları için geçersiz kılar.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -59,8 +59,9 @@ namespace Resource {
                 resourceCulture = value;
             }
         }
-                /// <summary>
-        ///   Looks up a localized string similar to Add.
+        
+        /// <summary>
+        ///   Add benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Add {
             get {
@@ -69,7 +70,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add to cart.
+        ///   Add to cart benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AddCart {
             get {
@@ -78,7 +79,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Category.
+        ///   Add Category benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AddCategory {
             get {
@@ -87,7 +88,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add Product.
+        ///   Add Product benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AddProduct {
             get {
@@ -96,7 +97,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add User.
+        ///   Add User benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AddUser {
             get {
@@ -105,7 +106,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BM-Medical Admin Page.
+        ///   BM-Medical Admin Page benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AdminPage {
             get {
@@ -114,7 +115,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Admin Panel.
+        ///   Admin Panel benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string AdminPanel {
             get {
@@ -123,7 +124,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Adress.
+        ///   Adress benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Adress {
             get {
@@ -132,7 +133,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Black.
+        ///   Black benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Black {
             get {
@@ -141,7 +142,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Blue.
+        ///   Blue benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Blue {
             get {
@@ -150,7 +151,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to BM-Medical.
+        ///   BM-Medical benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string BM_Medical {
             get {
@@ -159,7 +160,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cart.
+        ///   Cart benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Cart {
             get {
@@ -168,7 +169,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Categories.
+        ///   Categories benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Categories {
             get {
@@ -177,7 +178,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Category.
+        ///   Category benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Category {
             get {
@@ -186,7 +187,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Category Id.
+        ///   Category Id benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string CategoryId {
             get {
@@ -195,7 +196,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Category Information.
+        ///   Category Information benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string CategoryInformation {
             get {
@@ -204,7 +205,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Category Name.
+        ///   Category Name benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string CategoryName {
             get {
@@ -213,7 +214,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to City.
+        ///   City benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string City {
             get {
@@ -222,7 +223,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Colors.
+        ///   Colors benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Colors {
             get {
@@ -231,7 +232,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Combination x 1.
+        ///   Combination x 1 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Combination {
             get {
@@ -240,7 +241,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Complete Order.
+        ///   Complete Order benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string CompleteOrder {
             get {
@@ -249,7 +250,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact.
+        ///   Contact benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Contact {
             get {
@@ -258,7 +259,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Contact Us.
+        ///   Contact Us benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ContactUs {
             get {
@@ -267,7 +268,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Continue to Shopping.
+        ///   Continue to Shopping benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ContinueShopping {
             get {
@@ -276,7 +277,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to |  Created by Berkay &amp; Metin.
+        ///   |  Created by Berkay &amp; Metin benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string CopyRight {
             get {
@@ -285,7 +286,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Coronavirus.
+        ///   Coronavirus benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Coronavirus {
             get {
@@ -294,7 +295,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dashboard.
+        ///   Dashboard benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Dashboard {
             get {
@@ -303,7 +304,16 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Development Mode.
+        ///   Description benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Development Mode benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Development_Mode {
             get {
@@ -312,7 +322,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disinfectant.
+        ///   Disinfectant benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Disinfectant {
             get {
@@ -321,7 +331,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disinfectants.
+        ///   Disinfectants benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Disinfectants {
             get {
@@ -330,16 +340,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Edit/Remove.
-        /// </summary>
-        public static string EditRemove {
-            get {
-                return ResourceManager.GetString("EditRemove", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to English.
+        ///   English benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string English {
             get {
@@ -348,7 +349,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Error.
+        ///   Error benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Error {
             get {
@@ -357,7 +358,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to An error occurred while processing your request..
+        ///   An error occurred while processing your request. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Error_Detail {
             get {
@@ -366,7 +367,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to hellocolorlib@gmail.com.
+        ///   hellocolorlib@gmail.com benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ExampleMail {
             get {
@@ -375,7 +376,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to bm_medical@gmail.com.
+        ///   bm_medical@gmail.com benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ExampleMail_2 {
             get {
@@ -384,7 +385,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 0532 777 11 22.
+        ///   0532 777 11 22 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ExamplePhoneNumber {
             get {
@@ -393,7 +394,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Logout.
+        ///   Logout benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Exit {
             get {
@@ -402,7 +403,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Filtre.
+        ///   Filtre benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Filter {
             get {
@@ -411,7 +412,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Finishing to Shopping.
+        ///   Finishing to Shopping benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string FinishShopping {
             get {
@@ -420,7 +421,16 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Glove.
+        ///   Give Order benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string GiveOrder {
+            get {
+                return ResourceManager.GetString("GiveOrder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Glove benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Glove {
             get {
@@ -429,7 +439,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gloves.
+        ///   Gloves benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Gloves {
             get {
@@ -438,7 +448,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Go to cart.
+        ///   Go to cart benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string GoToCart {
             get {
@@ -447,7 +457,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yeşil.
+        ///   Yeşil benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Green {
             get {
@@ -456,7 +466,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hello.
+        ///   Hello benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Hello {
             get {
@@ -465,7 +475,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Home Page.
+        ///   Home Page benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string HomePage {
             get {
@@ -474,7 +484,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Information.
+        ///   Information benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Information {
             get {
@@ -483,7 +493,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detail of Invoice.
+        ///   Detail of Invoice benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string InvoiceDetail {
             get {
@@ -492,7 +502,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sign in.
+        ///   Sign in benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Login {
             get {
@@ -501,8 +511,8 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        ///.
+        ///   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        /// benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string LoremIpsum {
             get {
@@ -511,7 +521,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E-Mail.
+        ///   E-Mail benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Mail {
             get {
@@ -520,7 +530,16 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Masks.
+        ///   Main Page benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string MainPage {
+            get {
+                return ResourceManager.GetString("MainPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Masks benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Masks {
             get {
@@ -529,7 +548,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to More.
+        ///   More benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string More {
             get {
@@ -538,7 +557,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Click for detailed information.
+        ///   Click for detailed information benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string MoreInformation {
             get {
@@ -547,7 +566,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My Account.
+        ///   My Account benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string MyAccount {
             get {
@@ -556,7 +575,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Name benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Name {
             get {
@@ -565,7 +584,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number.
+        ///   Number benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Number {
             get {
@@ -574,7 +593,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of Products on the Site.
+        ///   Number of Products on the Site benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string NumberOfProducts {
             get {
@@ -583,7 +602,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Number of Users Registered on the Site.
+        ///   Number of Users Registered on the Site benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string NumberOfUsers {
             get {
@@ -592,7 +611,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 1.
+        ///   1 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string One {
             get {
@@ -601,7 +620,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to According to the data of the World Health Organization, as of November 12, 2020, a total of 212 vaccine studies for Covid-19 continue in dozens of countries, including Turkey..
+        ///   According to the data of the World Health Organization, as of November 12, 2020, a total of 212 vaccine studies for Covid-19 continue in dozens of countries, including Turkey. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Paragraph_1 {
             get {
@@ -610,7 +629,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Although more than one type of COVID-19 vaccine can be administered in our country during the process, inactive COVID-19 vaccine (Sinovac) and mRNA COVID-19 vaccine (Biontech) are currently being administered..
+        ///   Although more than one type of COVID-19 vaccine can be administered in our country during the process, inactive COVID-19 vaccine (Sinovac) and mRNA COVID-19 vaccine (Biontech) are currently being administered. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Paragraph_2 {
             get {
@@ -619,7 +638,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Symptoms of the new coronavirus infection include fever, cough, shortness of breath and difficulty breathing..
+        ///   Symptoms of the new coronavirus infection include fever, cough, shortness of breath and difficulty breathing. benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Paragraph_3 {
             get {
@@ -628,7 +647,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Phone Number.
+        ///   Phone Number benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string PhoneNumber {
             get {
@@ -637,7 +656,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Picture.
+        ///   Picture benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Picture {
             get {
@@ -646,7 +665,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Pure Pineapple.
+        ///   Pure Pineapple benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Pineapple {
             get {
@@ -655,7 +674,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 60 ₺.
+        ///   60 ₺ benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price {
             get {
@@ -664,7 +683,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to $60.00 x 1.
+        ///   $60.00 x 1 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price_2 {
             get {
@@ -673,7 +692,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to $64.00.
+        ///   $64.00 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price_3 {
             get {
@@ -682,7 +701,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to $35.00.
+        ///   $35.00 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price_4 {
             get {
@@ -691,7 +710,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to $44.00.
+        ///   $44.00 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price_5 {
             get {
@@ -700,7 +719,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to $34.00.
+        ///   $34.00 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Price_6 {
             get {
@@ -709,7 +728,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kabino Bedside Table.
+        ///   Kabino Bedside Table benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Product {
             get {
@@ -718,7 +737,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Detail.
+        ///   Product Detail benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductDetail {
             get {
@@ -727,7 +746,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Explanation.
+        ///   Product Explanation benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductExplanation {
             get {
@@ -736,7 +755,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Id.
+        ///   Product Id benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductId {
             get {
@@ -745,7 +764,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Information.
+        ///   Product Information benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductInformation {
             get {
@@ -754,7 +773,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Product Name.
+        ///   Product Name benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductName {
             get {
@@ -763,7 +782,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Price (₺).
+        ///   Price (₺) benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductPrice {
             get {
@@ -772,7 +791,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Products.
+        ///   Products benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Products {
             get {
@@ -781,7 +800,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stock.
+        ///   Stock benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string ProductStock {
             get {
@@ -790,7 +809,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Red.
+        ///   Red benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Red {
             get {
@@ -799,7 +818,25 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Request ID:.
+        ///   Register benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string Register {
+            get {
+                return ResourceManager.GetString("Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Remove benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string Remove {
+            get {
+                return ResourceManager.GetString("Remove", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Request ID: benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Request_Id {
             get {
@@ -808,7 +845,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Role.
+        ///   Role benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Role {
             get {
@@ -817,7 +854,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sakarya University Esentepe Campus.
+        ///   Sakarya University Esentepe Campus benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Sakarya {
             get {
@@ -826,7 +863,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select Category.
+        ///   Select Category benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string SelectCategory {
             get {
@@ -835,7 +872,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Converse Shoes.
+        ///   Converse Shoes benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Shoes {
             get {
@@ -844,7 +881,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shop.
+        ///   Shop benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Shop {
             get {
@@ -853,7 +890,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shopping.
+        ///   Shopping benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Shopping {
             get {
@@ -862,7 +899,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sign up.
+        ///   Sign up benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string SignUp {
             get {
@@ -871,7 +908,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Recently Sold Items.
+        ///   Recently Sold Items benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string SoldProduct {
             get {
@@ -880,7 +917,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Surname.
+        ///   Surname benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Surname {
             get {
@@ -889,7 +926,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Syndrome.
+        ///   Syndrome benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Syndrome {
             get {
@@ -898,7 +935,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 3.
+        ///   3 benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Three {
             get {
@@ -907,7 +944,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total.
+        ///   Total benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Total {
             get {
@@ -916,7 +953,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total Income.
+        ///   Total Income benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string TotalIncome {
             get {
@@ -925,7 +962,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Total Price.
+        ///   Total Price benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string TotalPrice {
             get {
@@ -934,7 +971,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Turkish.
+        ///   Turkish benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Turkish {
             get {
@@ -943,7 +980,16 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Adress.
+        ///   Update benzeri yerelleştirilmiş bir dize arar.
+        /// </summary>
+        public static string Update {
+            get {
+                return ResourceManager.GetString("Update", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   User Adress benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserAdress {
             get {
@@ -952,7 +998,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to City ​​where the user lives.
+        ///   City ​​where the user lives benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserCity {
             get {
@@ -961,7 +1007,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Information.
+        ///   User Information benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserInformation {
             get {
@@ -970,7 +1016,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Mail.
+        ///   User Mail benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserMail {
             get {
@@ -979,7 +1025,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Name.
+        ///   User Name benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserName {
             get {
@@ -988,7 +1034,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Users.
+        ///   Users benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Users {
             get {
@@ -997,7 +1043,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to User Surname.
+        ///   User Surname benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string UserSurname {
             get {
@@ -1006,7 +1052,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to News about vaccination.
+        ///   News about vaccination benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string VacationNews {
             get {
@@ -1015,7 +1061,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Virus Studies.
+        ///   Virus Studies benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string VirusStudies {
             get {
@@ -1024,7 +1070,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Visors.
+        ///   Visors benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Visors {
             get {
@@ -1033,7 +1079,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 2 Layer Windbreaker.
+        ///   2 Layer Windbreaker benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Windbreaker {
             get {
@@ -1042,7 +1088,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Yellow.
+        ///   Yellow benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string Yellow {
             get {
@@ -1051,7 +1097,7 @@ namespace Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Your Orders.
+        ///   Your Orders benzeri yerelleştirilmiş bir dize arar.
         /// </summary>
         public static string YourOrders {
             get {

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
+using BM_Medical.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +14,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using BM_Medical.Models;
+
 
 namespace BM_Medical.Areas.Identity.Pages.Account
 {
@@ -26,10 +27,10 @@ namespace BM_Medical.Areas.Identity.Pages.Account
         private readonly IEmailSender _emailSender;
 
         public RegisterModel(
-            UserManager<IdentityUser> userManager,
-            SignInManager<IdentityUser> signInManager,
-            ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+        UserManager<IdentityUser> userManager,
+        SignInManager<IdentityUser> signInManager,
+        ILogger<RegisterModel> logger,
+        IEmailSender emailSender)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -42,30 +43,29 @@ namespace BM_Medical.Areas.Identity.Pages.Account
 
         public string ReturnUrl { get; set; }
 
+
+
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
+
+
 
         public class InputModel
         {
-            //[Required]
-            //[Display(Name = "Ad")]
-            //public string UserName { get; set; }
+            [Required]
+            [Display(Name = "Ad")]
+            public string Ad { get; set; }
 
             [Required]
             [Display(Name = "Soyad")]
-            public string UserSurname { get; set; }
+            public string Soyad { get; set; }
 
-            [Required]
-            [Display(Name = "Şehir")]
-            public string Sehir { get; set; }
-
-            [Required]
-            [Display(Name = "Adres")]
-            public string Adres { get; set; }
 
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
+
+
 
             [Required]
             [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
@@ -73,17 +73,23 @@ namespace BM_Medical.Areas.Identity.Pages.Account
             [Display(Name = "Password")]
             public string Password { get; set; }
 
+
+
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
         }
 
+
+
         public async Task OnGetAsync(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
+
+
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
@@ -93,11 +99,9 @@ namespace BM_Medical.Areas.Identity.Pages.Account
             {
                 var user = new User
                 {
-                    
-                    //Ad = Input.UserName,
-                    Soyad = Input.UserSurname,
-                    Sehir = Input.Sehir,
-                    Adres = Input.Adres,
+                    Ad = Input.Ad,
+                    Soyad = Input.Soyad,
+                    UserName = Input.Email,
                     Email = Input.Email,
                 };
                 var result = await _userManager.CreateAsync(user, Input.Password);
@@ -105,10 +109,8 @@ namespace BM_Medical.Areas.Identity.Pages.Account
                 {
 
                     await _userManager.AddToRoleAsync(user, "Customer");
-
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);
-
                 }
 
                 foreach (var error in result.Errors)

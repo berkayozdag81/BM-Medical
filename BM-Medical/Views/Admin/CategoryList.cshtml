@@ -1,5 +1,6 @@
 ﻿@model List<Category>
 @{ Layout = "_LayoutAdmin"; }
+@using BM_Medical_Resource
 
 <div class="container-fluid">
     <h1 class="dash-title">@Labels.Categories</h1>
@@ -7,7 +8,7 @@
         <div class="col-lg-12">
             <p>
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-              @Labels.AddCategory
+                    @Labels.AddCategory
                 </a>
             </p>
             <div class="collapse" id="collapseExample">
@@ -17,10 +18,11 @@
                         <div class="form-group row">
                             <div class="col-sm-12 pb-3">
                                 <label>@Labels.CategoryName</label>
-                                <input class="form-control" name="Name" />
+                                <input id="inp" class="form-control" name="Ad" />
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary">@Labels.Add</button>
+                        <a onclick="Edit()" class="btn btn-info" style="color:white">@Labels.Update</a>
                     </form>
                 </div>
             </div>
@@ -29,7 +31,7 @@
                     <div class="easion-card-icon">
                         <i class="fas fa-table"></i>
                     </div>
-                       <div class="easion-card-title">@Labels.CategoryInformation</div>
+                    <div class="easion-card-title">@Labels.CategoryInformation</div>
                 </div>
                 <div class="card-body ">
                     <table class="table table-hover table-in-card">
@@ -37,7 +39,7 @@
                             <tr>
                                 <th scope="col">Kategori Id</th>
                                 <th scope="col">Kategori Adı</th>
-                                <th scope="col">Düzenle/Sil</th>
+                                <th scope="col">Düzenle / Sil</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -47,13 +49,14 @@
                                     <td scope="row">@item.Id</td>
                                     <td>@item.Ad</td>
                                     <td>
+                                        <button data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample" onclick="fill(@item.Id,'@item.Ad')" class="fa fa-edit"></button>
                                         <form asp-controller="Admin" asp-action="CategoryDelete" method="post" style="display:inline">
                                             <input type="hidden" name="Id" value="@item.Id" />
                                             <button type="submit" class="btn btn-danger btn-sm "><i class="fas fa-trash-alt"></i></button>
                                         </form>
                                     </td>
                                 </tr>
-                            }
+}
                         </tbody>
                     </table>
                 </div>
@@ -61,3 +64,48 @@
         </div>
     </div>
 </div>
+
+<script>
+    var model = {
+        Id: 0,
+        Ad: ""
+    };
+    function fill(id,ad) {
+        console.log("deneme");
+        debugger;
+        model.Id = id;
+        model.Ad = ad;
+        $("#inp").val(ad);
+    }
+    function Edit() {
+        debugger;
+        model = {
+            Id: model.Id,
+            Ad: $("#inp").val()
+        }
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("CategoryEdit", "Admin")',
+            data: model,
+            success: function (data) {
+                if (data) {
+                   // alert("İşlem Başarılı Bir Şekilde Gerçekleşmiştir.")
+                    $.notify("İşlem Başarılı Bir Şekilde Gerçekleşmiştir.", "success");
+                    sleep(2000);
+                    location.reload();
+                }
+                else {
+                    $.notify(data.Messages);
+                    //alert(data.Messages);
+                }
+            },
+            error: function () {
+                $.notify("İşlem Başarısız", "error");
+                //alert("İşlem Başarısız");
+            }
+        });
+    }
+    $(document).ready(function () {
+    });
+
+</script>

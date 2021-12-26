@@ -1,4 +1,5 @@
-﻿@model List<Category>
+﻿@using BM_Medical_Resource
+@model List<Product>
 @{
     ViewData["Title"] = "Alışveriş Sayfası";
 }
@@ -7,70 +8,34 @@
 <section class="product-shop spad">
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-8 order-2 order-lg-1 produts-sidebar-filter">
-                <div class="filter-widget">
-                    <h4 class="fw-title">Kategoriler</h4>
-                    <ul class="filter-catagories">
-                        @foreach (var item in Model)
-                        {
-                            <li><a href="#">@item.Ad</a></li>
-                        }
-                    </ul>
-                </div>
-                <div class="filter-widget">
-                    <h4 class="fw-title">Fiyat</h4>
-                    <div class="filter-range-wrap">
-
-                        <div class="row">
-                            <div class="form-group col-md-5">
-                                <input type="number" min="5" step=5 class="form-control" placeholder="Min">
-                                <span class="text-danger"></span>
-                            </div>
-                            <div class="form-group col-md-2">-</div>
-                            <div class="form-group col-md-5">
-                                <input type="number" min="5" step=5 class="form-control" placeholder="Max">
-                                <span class="text-danger"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="filter-btn">Ara</a>
-                </div>
-            </div>
-            <div class="col-lg-9 order-1 order-lg-2">
+            <div class="col-lg-12 order-1 order-lg-2">
                 <div class="product-list">
                     <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="product-item">
-                                <div class="pi-pic">
-                                    <img src="/lib/bootstrap/dist/img/products/dezenfektan1.1.jpg" alt="">
-                                    <div class="icon">
-                                        <i class="icon_heart_alt"></i>
+                        @foreach (var product in Model)
+                        {
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="product-item">
+                                    <div class="pi-pic">
+                                        <img src="/lib/bootstrap/dist/img/products/@product.ImageUrl" alt="">
+                                        <ul>
+                                            @if (User.IsInRole("Admin") || User.IsInRole("Customer"))
+                                            {
+                                                <li class="quick-view"><a asp-controller="Shop" asp-action="OrderCreate" asp-route-productId="@product.Id">@Labels.GiveOrder</a></li>
+                                            }
+                                        </ul>
                                     </div>
-                                    <ul>
-                                        @if (User.IsInRole("Admin") || User.IsInRole("Customer"))
-                                        {
-                                            <li class="quick-view"><a href="#">+ Sepete Ekle</a></li>
-                                        }
-                                    </ul>
-                                </div>
-                                <div class="pi-text">
-                                    <a href="#">
-                                        <h5>Pure Pineapple</h5>
-                                    </a>
-                                    <div class="product-price">
-                                        $64.00
-                                        <span>$35.00</span>
+                                    <div class="pi-text">
+                                        <a href="#">
+                                            <h5>@product.Ad</h5>
+                                        </a>
+                                        <div class="product-price">
+                                            @product.Fiyat ₺
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        }
                     </div>
-                </div>
-                <div class="loading-more">
-                    <i class="icon_loading"></i>
-                    <a href="#">
-                        Daha Fazla
-                    </a>
                 </div>
             </div>
         </div>

@@ -2,15 +2,17 @@
 @model LoginModel
 
 @{
-    ViewData["Title"] = "Log in";
+    ViewData["Title"] = "Giriş Yap";
 }
 
-<div  style="width:800px; margin:0 auto;">
-    <h1>@ViewData["Title"]</h1>
-</div>
-<div class="row" style="width:800px; margin:0 auto;">
+
+<div class="row" style="width:500px; margin:0 auto;">
     <div class="col-md-12 align-items-md-center">
         <section>
+            <div style="width:500px; margin:0 auto;">
+                <h1>@ViewData["Title"]</h1>
+            </div>
+            <h3>Lütfen Hesap Bilgilerinizi giriniz!</h3>
             <form id="account" method="post">
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>

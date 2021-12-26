@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM-Medical", "BM-Medical\BM-Medical.csproj", "{3F4E0657-82F4-4FAB-A576-9D378649FA2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM_Medical_WebUI", "BM-Medical\BM_Medical_WebUI.csproj", "{3F4E0657-82F4-4FAB-A576-9D378649FA2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{592C27AA-3791-4336-8DBF-6262A48906F2} = {592C27AA-3791-4336-8DBF-6262A48906F2}
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BM-Medical_WebApi", "BM-Medical_WebApi\BM-Medical_WebApi.csproj", "{65DF4B89-9754-4D52-AA70-F29C76628542}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM_Medical_Resource", "Resource\BM_Medical_Resource.csproj", "{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resource", "Resource\Resource.csproj", "{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM_Medical_Handler", "BM-Medical_Handler\BM_Medical_Handler.csproj", "{592C27AA-3791-4336-8DBF-6262A48906F2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BM_Medical_DTO", "BM-Medical_DTO\BM_Medical_DTO.csproj", "{CBAB0508-F283-49B3-A936-87190AD4FEAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BM_Medical_WebApi_Core", "BM_Medical_WebApi_Core\BM_Medical_WebApi_Core.csproj", "{5BBFDDCF-4323-4569-BFCE-E8CAB1008383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +26,22 @@ Global
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4E0657-82F4-4FAB-A576-9D378649FA2A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{65DF4B89-9754-4D52-AA70-F29C76628542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65DF4B89-9754-4D52-AA70-F29C76628542}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65DF4B89-9754-4D52-AA70-F29C76628542}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65DF4B89-9754-4D52-AA70-F29C76628542}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC1F84F-5B94-483C-B2D9-38CA22E0C183}.Release|Any CPU.Build.0 = Release|Any CPU
+		{592C27AA-3791-4336-8DBF-6262A48906F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{592C27AA-3791-4336-8DBF-6262A48906F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{592C27AA-3791-4336-8DBF-6262A48906F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{592C27AA-3791-4336-8DBF-6262A48906F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBAB0508-F283-49B3-A936-87190AD4FEAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBAB0508-F283-49B3-A936-87190AD4FEAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBAB0508-F283-49B3-A936-87190AD4FEAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBAB0508-F283-49B3-A936-87190AD4FEAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BBFDDCF-4323-4569-BFCE-E8CAB1008383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BBFDDCF-4323-4569-BFCE-E8CAB1008383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BBFDDCF-4323-4569-BFCE-E8CAB1008383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BBFDDCF-4323-4569-BFCE-E8CAB1008383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

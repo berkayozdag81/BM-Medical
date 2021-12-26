@@ -1,17 +1,16 @@
-﻿using BM_Medical.Data;
-using BM_Medical.Models;
+﻿using BM_Medical.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using BM_Medical_Handler.Data;
+using System;
+using System.IO;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BM_Medical.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class AdminController : Controller
     {
         private ApplicationDbContext Context { get; }
@@ -23,7 +22,14 @@ namespace BM_Medical.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            if (true)
+            {
+                ViewBag.UserCount = this.Context.Users.Count();
+                ViewBag.ProductCount = this.Context.Products.Count();
+                return View();
+            }
+
+            return Redirect("/Home/Index");
         }
 
 
@@ -55,6 +61,23 @@ namespace BM_Medical.Controllers
             return Redirect("/Admin/CategoryList");
         }
 
+        [HttpPost]
+        public IActionResult CategoryEdit(Category category)
+        {
+            var entity = new Category()
+            {
+                Id = category.Id,
+                Ad = category.Ad,
+
+            };
+            if (category != null)
+            {
+                this.Context.Categories.Attach(entity);
+                this.Context.Entry(entity).Property(x => x.Ad).IsModified = true;
+                this.Context.SaveChanges();
+            }
+            return Redirect("/Admin/CategoryList");
+        }
 
 
 
@@ -63,6 +86,17 @@ namespace BM_Medical.Controllers
         [HttpPost]
         public IActionResult ProductCreate(Product product)
         {
+            var a = _hostingEnvironment.WebRootPath;
+            var fileName = product.Image.FileName;
+            var filePath = Path.Combine(_hostingEnvironment.WebRootPath, "C:/Users/BERKAY/Desktop/BM-Medical/BM-Medical/BM-Medical/wwwroot/lib/bootstrap/dist/img/products", fileName);
+
+            using (var fileSteam = new FileStream(filePath, FileMode.Create))
+            {
+                product.Image.CopyToAsync(fileSteam);
+            }
+
+
+
             var entity = new Product()
             {
                 Ad = product.Ad,
@@ -70,7 +104,7 @@ namespace BM_Medical.Controllers
                 Stok = product.Stok,
                 Fiyat = product.Fiyat,
                 Aciklama = product.Aciklama,
-                Image = product.Image
+                ImageUrl = product.Image.FileName
             };
             this.Context.Products.Add(entity);
             this.Context.SaveChanges();
@@ -78,31 +112,29 @@ namespace BM_Medical.Controllers
         }
         public IActionResult ProductList()
         {
+
             var objList = (this.Context.Products).ToList();
+            //objList[0].ImageUrl = "dezenfektan1.2.jpg";
             return View(objList);
         }
-
-
-
-
-
-
-
-        [HttpPost]
-        public IActionResult UserCreate(User user)
+        public IActionResult ProductDelete(int Id)
         {
-            var entity = new User()
+            var product = this.Context.Products.Find(Id);
+            if (product != null)
             {
-                UserName = user.UserName,
-                Soyad = user.Soyad,
-                Adres = user.Adres,
-                Sehir = user.Sehir,
-                Email = user.Email,
-            };
-            this.Context.Users.Add(entity);
-            this.Context.SaveChanges();
-            return Redirect("/Admin/UserList");
+                this.Context.Products.Remove(product);
+                this.Context.SaveChanges();
+            }
+            return Redirect("/Admin/ProductList");
         }
+
+
+
+
+
+
+
+
         public IActionResult UserList()
         {
             var objList = (this.Context.Users).ToList();

@@ -1,58 +1,53 @@
 ﻿@model List<Product>
+@using BM_Medical_Resource;
 @{ Layout = "_LayoutAdmin"; }
 <div class="container-fluid">
-     <h1 class="dash-title">@Labels.Products</h1>
+    <h1 class="dash-title">@Labels.Products</h1>
     <div class="row">
         <div class="col-lg-12">
             <p>
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                 @Labels.AddProduct
+                    @Labels.AddProduct
                 </a>
             </p>
             <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                    <form asp-controller="Admin" asp-action="ProductList" enctype="multipart/form-data" method="post">
+                    <form asp-controller="Admin" asp-action="ProductCreate" method="post" enctype="multipart/form-data">
                         <div asp-validation-summary="All" class="text-danger"></div>
                         <div class="form-group row">
                             <div class="col-sm-12 pb-3">
                                 <div class="form-group col-md-6">
                                     <label for="inputEmail4">@Labels.ProductName</label>
-                                    <input type="text" class="form-control" placeholder="">
-                                    <span class="text-danger"></span>
+                                    <input type="text" class="form-control" placeholder="" name="Ad">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="inputEmail4">@Labels.ProductPrice (₺)</label>
-                                    <input type="number" min="0.5" step=0.1 class="form-control" placeholder="">
-                                    <span class="text-danger"></span>
+                                    <input type="number" min="0.5" step=0.1 class="form-control" placeholder="" name="Fiyat">
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="inputEmail4">@Labels.ProductStock</label>
-                                    <input min="0" type="number" class="form-control" placeholder="">
-                                    <span class="text-danger"></span>
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputEmail4">@Labels.ProductId</label>
-                                    <input type="number" readonly class="form-control" placeholder="Ürün Id">
+                                    <input min="0" type="number" class="form-control" placeholder="" name="Stok">
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="inputEmail4">@Labels.Category</label>
                                     <select class="form-control" name="categoryId">
-                                        <option value="">@Labels.SelectCategory </option>
+                                        <option value="">Maske </option>
+                                        <option value="">Eldiven </option>
+                                        <option value="">Siperlik </option>
+                                        <option value="">Dezenfektan</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputAddress">@Labels.ProductExplanation</label>
-                                    <textarea class="form-control" rows="10"></textarea>
-                                    <span class="text-danger"></span>
+                                    <textarea class="form-control" rows="10" name="Aciklama"></textarea>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="imageUrl"></label>
-                                    <input type="file"  name="files" class="form-control"/>
-                                    <span class="text-danger"></span>
+                                    <label>Ürün Resmi Ekle</label>
+                                    <input name="Image" class="form-control" type="file"/>
                                 </div>
                             </div>
                         </div>
-                          <button type="submit" class="btn btn-primary">@Labels.Add</button>
+                        <button type="submit" class="btn btn-primary">@Labels.Add</button>
                     </form>
                 </div>
             </div>
@@ -72,10 +67,33 @@
                                 <th scope="col">@Labels.ProductName</th>
                                 <th scope="col">@Labels.ProductPrice</th>
                                 <th scope="col">@Labels.ProductStock</th>
+                                <th scope="col">@Labels.Description</th>
                                 <th scope="col">@Labels.Category</th>
-                                <th scope="col">@Labels.EditRemove</th>
+                                <th scope="col">Resim</th>
+                                <th scope="col">@Labels.Remove</th>
                             </tr>
                         </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td scope="row">@item.Id</td>
+                                    <td><a href="/shop/details/@item.Id">@*<img src="~/img/featured/@item.Image[0].ImageUrl" width=90 height="67" />*@</a></td>
+                                    <td>@item.Ad</td>
+                                    <td>@(Convert.ToDouble(item.Fiyat).ToString("c"))</td>
+                                    <td>@item.Stok</td>
+                                    <td>@item.Aciklama</td>
+                                    <td>@item.Category</td>
+                                    <td><img src="/lib/bootstrap/dist/img/products/@item.ImageUrl.ToString()" alt=""></td>
+                                    <td>
+                                        <form asp-controller="Admin" asp-action="ProductDelete" method="post" style="display:inline">
+                                            <input type="hidden" name="Id" value="@item.Id" />
+                                            <button type="submit" class="btn btn-danger btn-sm "><i class="fas fa-trash-alt"></i></button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
                     </table>
                 </div>
             </div>
